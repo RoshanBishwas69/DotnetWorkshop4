@@ -1,10 +1,12 @@
-﻿namespace Task_2
+﻿namespace Task2;
+
+class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Calculator calc = new Calculator();
+        Console.WriteLine(calc.Add(1, 2));
+        Console.WriteLine(calc.Multiply(2, 3));
+        calc.PrintWelcome();
     }
 }
